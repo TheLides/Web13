@@ -1,0 +1,40 @@
+body, html {
+  height: 100%; }
+
+.carousel-img {
+  object-position: center;
+  object-fit: cover;
+  margin-top: -20%;
+  margin-bottom: -20%; }
+
+.div-shadow {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+
+.page-1-card, .page-2-card, .page-3-card {
+  background-color: cornflowerblue; }
+
+.page-2-card {
+  background-color: deeppink; }
+  .page-2-card > .card-body > p {
+    font-weight: 700; }
+
+.page-3-card {
+  background-color: burlywood; }
+  .page-3-card > .card-body > p::after {
+    display: block;
+    content: "This content is added via css."; }
+
+.card-columns {
+  column-count: 1; }
+  @media (min-width: 576px) {
+    .card-columns {
+      column-count: 2; } }
+  @media (min-width: 768px) {
+    .card-columns {
+      column-count: 2; } }
+  @media (min-width: 992px) {
+    .card-columns {
+      column-count: 3; } }
+  @media (min-width: 1200px) {
+    .card-columns {
+      column-count: 4; } }
